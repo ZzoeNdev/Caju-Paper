@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter",sans-serif;
+}
+
+body{
+    max-width: 1980px;
+}
+
+header{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pesq{
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.inpPesq{
+    width: 90%;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(202, 202, 202);
+    padding-left: 34px;
+}
+
+.search{
+    height: 20px;
+    position: relative;
+    left: 30px;
+}
+
+.profile, .shop, .menu{
+    height: 30px;
+}
+
+.plant{
+    position: absolute;
+    z-index: -999;
+    opacity: 5%;
+    top: 520px;
+    left: 1400px;
+    rotate: 90deg;
+}
+
+.plantD{
+    position: absolute;
+    z-index: -999;
+    opacity: 7%;
+    top: 1200px;
+    left: 00px;
+}
+
+.carroussel{
+    background-color: rgba(89, 151, 136, 1);
+    width: 100%;
+    height: 300px;
+}
+
+.line_up, .line_down{
+    background-color: rgba(89, 151, 136, 1);
+    width: 85%;
+    height: 3px;
+}
+
+.destq, .prods{
+    color: rgba(89, 151, 136, 1);
+    font-weight: 700;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.destq{
+    margin-right: 50px;
+}
+
+.prods{
+    margin-left: 80px;
+}
+
+.subdivisions_up, .subdivisions_down{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products_Container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgb(184, 184, 184) 3px 2px 10px 0px;
+    background-color: rgb(216, 216, 216);
+    height: 200px;
+    width: 180px;
+}
+
+.img_prod{
+height: 150px;
+}
+
+.name{
+    margin-top: 10px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.price{
+    font-size: 22px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.blocks_container{
+    display: flex;
+    margin-top: 40px;
+}
+
+.blockO, .blockT, .blockTr{
+    width: 1000px;
+    height: 320px;
+}
+
+.blockO{
+    background-color: rgb(160, 217, 201);
+}
+
+.blockT{
+    background-color: rgb(84, 140, 124);
+}
+
+.blockTr{
+    background-color: rgb(73, 115, 103);
+}
+
+.esc{
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.blockEsc{
+    background-color: rgb(73, 115, 103);
+    width: 380px;
+    height: 100px;
+}
+
+.txtEsc{
+    position: absolute;
+    font-size: 85px;
+    font-weight: 800;
+    font-style: italic;
+    color: white;
+    top: 1390px;
+    left: 70px;
+    -webkit-text-stroke: 1px rgb(73, 115, 103);
+}

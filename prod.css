@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter",sans-serif;
+}
+
+header{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pesq{
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.inpPesq{
+    width: 90%;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(202, 202, 202);
+    padding-left: 34px;
+}
+
+.search{
+    height: 20px;
+    position: relative;
+    left: 30px;
+}
+
+.functions{
+    display: flex;
+}
+
+.profile, .shop, .menu{
+    height: 30px;
+}
+
+.product{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.containerUp{
+    display: flex;
+}
+
+.background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    width: 648px;
+    height: 648px;
+    background-color: rgba(178, 178, 178, 1);
+    border-radius: 42px;
+}
+
+.prodimg{
+    width: 597px;
+    height: 597px;
+}
+
+.info{
+    max-width: 50%;
+    margin-left: 50px;
+    padding-top: 50px;
+}
+
+.shop{
+    display: flex;
+    align-items: center;
+}
+
+.qtd{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inpQtd{
+    text-align: center;
+    width: 78px;
+    height: 29px;
+    background-color: rgba(183, 183, 183, 1);
+    border-radius: 12px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.btUp, .btDw{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow{
+    height: 28px;
+}
+
+.car{
+    margin-left: 30px;
+    width: 388px;
+    height: 79px;
+    background-color: rgba(65, 123, 109, 1);
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+    color: rgba(217, 217, 217, 1);
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.prices{
+    margin-bottom: 300px;
+}
+
+.name{
+    font-size: 30px;
+}
+
+.oldprice{
+    font-size: 18px;
+    color: rgba(109, 109, 109, 1);
+    text-decoration: line-through;
+}
+
+.pix{
+    font-size: 15px;
+    color: rgba(5, 120, 35, 1);
+}
+
+.price{
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.bol{
+    font-size: 14px;
+    color: rgba(109, 109, 109, 1);
+}
+
+.inputs{
+    display: flex;
+}
