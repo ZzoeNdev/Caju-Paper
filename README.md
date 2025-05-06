@@ -17,3 +17,6 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" height="30px"/>
 
 📚 Made for school work.
+
+🎯 References:
+- Shopping Cart screen [<a href="https://www.kabum.com.br/carrinho">KaBum!</a>]
