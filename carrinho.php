@@ -16,14 +16,23 @@
         
     <div class="functions">
         <a href="#"><img src="imgs/account_circle.png" alt="" class="profile"></a>
-        <a href="#"><img src="imgs/Shopping bag.png" alt="" class="shop"></a>
-        <a href="#"><img src="imgs/Menu.png" alt="" class="menu"></a>
+        <a href="index.html"><img src="imgs/Menu.png" alt="" class="menu"></a>
     </div>
 
 </header>
 
 <main>
     <div class="general">
+
+    <div class="header-prods">
+    <p class="prods">PRODUTOS</p>
+
+    <form action="" method="POST">
+        <button class="clear" name="clear">REMOVER TODOS OS ITENS</button>
+    </form>
+    </div>
+
+    <div class="division"></div>
 
     <?php
 
@@ -68,20 +77,35 @@
 
         };
         
+
+        $sub = $total*0.01;
+        $frete = number_format($sub, 2, ',', '.');
+
+        $total = number_format($total, 2, ',', '.');
+
         if(!$total){
             $total = '00,00';
         }else{}
 
     ?>
 
-    <p class="value">R$ <?php echo $total ?></p>
-
     </div>
 
 
-    <form action="" method="POST">
-        <button name="clear">Excluir todos os itens</button>
-    </form>
+    <div class="container-general">
+        <p class="values">VALORES</p>
+        <div class="division"></div>
+        <p class="avalue">Valor total: R$ <?php echo $total ?></p>
+        <div class="division"></div>
+        <p class="frete">Frete: R$ <?php echo $frete?></p>
+        <div class="division"></div>
+
+        <div class="fpix">
+
+        </div>
+
+        <button class="buy">COMPRAR</button>
+    </div>
 </main>
 
 </body>

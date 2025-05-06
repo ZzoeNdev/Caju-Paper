@@ -11,11 +11,12 @@ body{
 header{
     display: flex;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .car{
     color: rgba(65, 123, 109, 1);
-    font-size: 64px;
+    font-size: 58px;
     font-weight: 800;
     font-style: italic;
 }
@@ -28,11 +29,21 @@ main{
 .general{
     display: flex;
     flex-direction: column;
-    width: 1736px;
+    width: 70%;
     min-height: 756px;
-    
     background-color: rgba(233, 233, 233, 1);
-    border-radius: 19px;
+    border-radius: 2px;
+}
+
+.container-general{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 350px;
+    background-color: rgba(233, 233, 233, 1);
+    border-radius: 10px;
+    margin-left: 2%;
 }
 
 .product{
@@ -43,7 +54,7 @@ main{
     margin-top: 50px;
     background-color: rgba(217, 217, 217, 1);
     border-radius: 22px;
-    width: 1628px;
+    width: 90%;
     height: 194px;
 }
 
@@ -116,3 +127,78 @@ main{
     font-style: italic;
 }
 
+.header-prods{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.clear{
+    background-color: transparent;
+    border: 1px solid rgb(187, 52, 52);
+    color: rgb(187, 52, 52);
+    padding: 8px 16px;
+    font-weight: 800;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear:hover{
+    transition: 0.1s;
+    color: rgb(124, 30, 30);
+    border: 1px solid rgb(124, 30, 30);
+}
+
+.division{
+    height: 1px;
+    width: 90%;
+    background-color: rgba(131, 131, 131, 0.329);
+    margin-left: 4%;
+}
+
+.prods{
+    font-size: 18px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.fpix{
+    margin-top: 20px;
+    background-color: rgba(65, 123, 109, 0.753);
+    height: 80px;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.values{
+    padding: 10px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.avalue{
+    padding: 15px;
+}
+
+.frete{
+    padding: 15px;
+}
+
+.buy{
+    margin-top: 20px;
+    width: 90%;
+    height: 50px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-style: italic;
+    background-color: rgba(65, 123, 109, 1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy:hover{
+    transition: 0.1s;
+    background-color: rgb(35, 66, 59);
+}
