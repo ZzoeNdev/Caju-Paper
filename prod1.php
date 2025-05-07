@@ -13,7 +13,7 @@ if(!isset($_GET['qtd'])){
 };
 
 $prod = array(
-    ['nome' => 'Caderno Tilibra - Hello Kitty','img' => 'Products/hellokitty.jpg', 'qtd' => $qtd, 'price' => 119.99],
+    ['nome' => 'Caderno Tilibra - Hello Kitty','img' => 'Products/hellokitty.jpg', 'qtd' => $qtd, 'price' => 59.99],
 );
 
 if (isset($_GET['add'])) {
@@ -21,6 +21,10 @@ if (isset($_GET['add'])) {
     foreach ($prod as $produto){
         $_SESSION['shop'][] = $produto;
     };
+
+    ?>
+    <script>alert('Produto adicionado ao carrinho!')</script>
+    <?php
 }
 
 ?>
@@ -30,14 +34,14 @@ if (isset($_GET['add'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prod1</title>
+    <title>Caderno Tilibra - Hello Kitty</title>
     <link rel="stylesheet" href="prod.css">
     <script src="script.js"></script>
 </head>
 <body>
 
 <header>
-        <img src="logo" alt="">
+        <a href="index.html"><img class="logo" src="imgs/logo.png" alt=""></a>
 
         <div class="pesq">
             <img src="imgs/search.png" alt="" class="search">
@@ -46,10 +50,12 @@ if (isset($_GET['add'])) {
         
     <div class="functions">
         <a href="#"><img src="imgs/account_circle.png" alt="" class="profile"></a>
-        <a href="#"><img src="imgs/Shopping bag.png" alt="" class="shop"></a>
+        <a href="carrinho.php"><img src="imgs/Shopping bag.png" alt="" class="shop"></a>
         <a href="#"><img src="imgs/Menu.png" alt="" class="menu"></a>
     </div>
 </header>
+
+<div class="line_up"></div>
 
 <main>
     <div class="product">
@@ -97,7 +103,13 @@ if (isset($_GET['add'])) {
         </div>
 
     </div>
+    
+
 </main>
+
+<footer>
+    
+</footer>
 
 </body>
 </html>

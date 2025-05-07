@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho | Caju Paper</title>
-    <link rel="stylesheet" href="carrinho.css">
+    <link rel="stylesheet" href="carrinhoo.css">
 </head>
 <body>
     
 <header>
 
         <div class="car">
+            <img src="imgs/Shopping bag.png" alt="">
             <p>Carrinho</p>
         </div>
         
     <div class="functions">
+        <a href="index.html"><img src="imgs/Home.png" alt=""></a>
         <a href="#"><img src="imgs/account_circle.png" alt="" class="profile"></a>
-        <a href="index.html"><img src="imgs/Menu.png" alt="" class="menu"></a>
+        <a href="#"><img src="imgs/Menu.png" alt="" class="menu"></a>
     </div>
 
 </header>
@@ -28,7 +30,7 @@
     <p class="prods">PRODUTOS</p>
 
     <form action="" method="POST">
-        <button class="clear" name="clear">REMOVER TODOS OS ITENS</button>
+        <button class="clear" name="clear"><img class="del" src="imgs/delete.svg" alt=""></button>
     </form>
     </div>
 
@@ -77,6 +79,7 @@
 
         };
         
+        $p = $total*0.9;
 
         $sub = $total*0.01;
         $frete = number_format($sub, 2, ',', '.');
@@ -97,16 +100,19 @@
         <div class="division"></div>
         <p class="avalue">Valor total: R$ <?php echo $total ?></p>
         <div class="division"></div>
-        <p class="frete">Frete: R$ <?php echo $frete?></p>
+        <p class="frete">Frete: GRÁTIS</p>
         <div class="division"></div>
 
         <div class="fpix">
-
+            <p>Valor no PIX:</p>
+        <p class="fvalue">R$ <?php echo $p ?></p>
         </div>
 
         <button class="buy">COMPRAR</button>
     </div>
 </main>
+
+<footer></footer>
 
 </body>
 </html>

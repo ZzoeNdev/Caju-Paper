@@ -6,6 +6,7 @@
 
 body{
     max-width: 1980px;
+    overflow-x: hidden;
 }
 
 header{
@@ -13,6 +14,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo{
+    height: 55px;
 }
 
 .pesq{
@@ -59,8 +64,20 @@ header{
 
 .carroussel{
     background-color: rgba(89, 151, 136, 1);
-    width: 100%;
+    width: 100vw;
     height: 300px;
+}
+
+.container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300vw;
+}
+
+.container img{
+    object-fit: cover;
+    height: 300px;
+    width: 110vw;
 }
 
 .line_up, .line_down{
@@ -138,7 +155,7 @@ height: 150px;
 
 .blockO, .blockT, .blockTr{
     width: 1000px;
-    height: 320px;
+    height: 100px;
 }
 
 .blockO{
@@ -170,7 +187,16 @@ height: 150px;
     font-weight: 800;
     font-style: italic;
     color: white;
-    top: 1390px;
+    top: 1195px;
     left: 70px;
     -webkit-text-stroke: 1px rgb(73, 115, 103);
 }
+
+footer{
+    margin-top: 70px;
+    height: 70px;
+    width: 100vw;
+    background-color: rgb(73, 115, 103);
+    border-radius: 10px 10px 0px 0px; 
+}
+

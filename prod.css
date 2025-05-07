@@ -11,6 +11,14 @@ header{
     align-items: center;
 }
 
+body{
+    padding: 0;
+}
+
+.logo{
+    height: 55px;
+}
+
 .pesq{
     display: flex;
     align-items: center;
@@ -112,10 +120,14 @@ header{
     border: none;
     border-radius: 28px;
     cursor: pointer;
-    color: rgba(217, 217, 217, 1);
+    color: rgb(226, 226, 226);
     font-size: 16px;
     font-weight: 700;
     font-style: italic;
+}
+
+.car:hover{
+    background-color: rgb(63, 110, 98);
 }
 
 .prices{
@@ -150,4 +162,19 @@ header{
 
 .inputs{
     display: flex;
+}
+
+footer{
+    margin-top: 70px;
+    height: 87px;
+    width: 100vw;
+    background-color: rgb(73, 115, 103);
+    border-radius: 10px 10px 0px 0px; 
+}
+
+.line_up{
+    margin-left: 8%;
+    background-color: rgba(89, 151, 136, 1);
+    width: 85%;
+    height: 2px;
 }

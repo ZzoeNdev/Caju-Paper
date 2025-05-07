@@ -13,7 +13,7 @@ if(!isset($_GET['qtd'])){
 };
 
 $prod = array(
-    ['nome' => 'Kit Lápis de Cor - Faber-Castel','img' => 'Products/lapis.png', 'qtd' => $qtd, 'price' => 39.99],
+    ['nome' => 'Mochila Shaun, O Carneiro','img' => 'Products/shaun.jpg', 'qtd' => $qtd, 'price' => 119.99],
 );
 
 if (isset($_GET['add'])) {
@@ -21,6 +21,10 @@ if (isset($_GET['add'])) {
     foreach ($prod as $produto){
         $_SESSION['shop'][] = $produto;
     };
+
+    ?>
+    <script>alert('Produto adicionado ao carrinho!')</script>
+    <?php
 }
 
 ?>
@@ -30,7 +34,7 @@ if (isset($_GET['add'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kit Lápis de Cor - Faber-Castel</title>
+    <title>Mochila Shaun, O Carneiro</title>
     <link rel="stylesheet" href="prod.css">
     <script src="script.js"></script>
 </head>
@@ -72,36 +76,40 @@ if (isset($_GET['add'])) {
                 <p class="bol">Pode ser pago em até 12x sem juros no boleto</p>
             </div>
 
-            <form action="" method="get">
+<form action="" method="get">
 
-<div class="shop">                
+            <div class="shop">                
 
-        <div class="qtd">
+                    <div class="qtd">
 
-            <div class="qtdItem"><b>Quantidade:</b></div>
+                        <div class="qtdItem"><b>Quantidade:</b></div>
 
-            <div class="inputs">
-                <button type="button" class="btDw"><img src="imgs/Arrow left.png" alt="" class="arrow" id="btMinus" onclick="Mnn()"></button>
-                <input class="inpQtd" type="text" name="qtd" value="1" id="inpQtd" >
-                <button type="button" class="btUp"><img src="imgs/Arrow right.png" alt="" class="arrow" id="btMore" onclick="Add()"></button>
+                        <div class="inputs">
+                            <button type="button" class="btDw"><img src="imgs/Arrow left.png" alt="" class="arrow" id="btMinus" onclick="Mnn()"></button>
+                            <input class="inpQtd" type="text" name="qtd" value="1" id="inpQtd" >
+                            <button type="button" class="btUp"><img src="imgs/Arrow right.png" alt="" class="arrow" id="btMore" onclick="Add()"></button>
+                        </div>
+
+                    </div>
+
+                    <div class="buy">
+                        <input type="submit" value="Adicionar ao Carrinho" name="add" class="car">
+                    </div>
+                    
             </div>
-
-        </div>
-
-        <div class="buy">
-            <input type="submit" value="Adicionar ao Carrinho" name="add" class="car">
-        </div>
         
-</div>
-
 </form>
 
         </div>
 
     </div>
+    
+
 </main>
 
-<footer></footer>
+<footer>
+    
+</footer>
 
 </body>
 </html>
